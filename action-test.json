@@ -1,0 +1,64 @@
+{
+   "CLIAction" : {
+      "actionPack" : {
+         "name" : "sampletest",
+         "category" : "test",
+         "author" : "test",
+         "version" : "test   ",
+         "lastModified" : "2015-03-30T18:41:58.982-07:00",
+         "tags" : [ ],
+         "packageName" : "sampletest"
+      },
+      "name" : "test",
+      "description" : "test",
+      "outputParamList" : [ {
+         "name" : "Execution Output",
+         "type" : "String",
+         "description" : "This output parameter holds the standard output of the command execution.",
+         "filterValue" : "[\\s\\S]*",
+         "filterType" : "REGEX",
+         "variableName" : "executionoutput",
+         "source" : "standardOut",
+         "arrayOption" : false
+      }, {
+         "name" : "Error Output",
+         "type" : "String",
+         "description" : "This output parameter holds the standard error output of the command execution.",
+         "filterValue" : "[\\s\\S]*",
+         "filterType" : "REGEX",
+         "variableName" : "erroroutput",
+         "source" : "standardError",
+         "arrayOption" : false
+      }, {
+         "name" : "Exit Code",
+         "type" : "Integer",
+         "description" : "This output parameter holds the returned exit code of the command execution.",
+         "filterValue" : "",
+         "filterType" : "REGEX",
+         "variableName" : "exitcode",
+         "source" : "exitCode",
+         "arrayOption" : false
+      } ],
+      "successMessage" : "Execution succeeded",
+      "type" : "CLI",
+      "complete" : true,
+      "lastModified" : "2015-03-30T18:42:12.514-07:00",
+      "className" : "Test",
+      "packageName" : "com.mycompany.sampletest",
+      "cliCommands" : [ {
+         "command" : "dir",
+         "execDir" : "%TEMP%",
+         "osType" : "WINDOWS",
+         "overwriteOutput" : false,
+         "timeout" : 0,
+         "waitForProcessToFinish" : false
+      }, {
+         "command" : "",
+         "execDir" : "/tmp/",
+         "osType" : "LINUX",
+         "overwriteOutput" : false,
+         "timeout" : 0,
+         "waitForProcessToFinish" : false
+      } ]
+   }
+}
