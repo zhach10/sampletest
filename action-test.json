@@ -10,7 +10,7 @@
          "packageName" : "sampletest"
       },
       "name" : "test",
-      "description" : "test",
+      "description" : "testdescription",
       "outputParamList" : [ {
          "name" : "Execution Output",
          "type" : "String",
@@ -42,7 +42,7 @@
       "successMessage" : "Execution succeeded",
       "type" : "CLI",
       "complete" : true,
-      "lastModified" : "2015-03-30T18:42:12.514-07:00",
+      "lastModified" : "2015-03-30T18:43:07.047-07:00",
       "className" : "Test",
       "packageName" : "com.mycompany.sampletest",
       "cliCommands" : [ {
